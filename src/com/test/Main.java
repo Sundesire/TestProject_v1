@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Задача №1
-        int[] sortedMass = {2,3,5,6};
+        int[] sortedMass = {2};
         sorting(sortedMass);
 
         //Задача №2
@@ -28,10 +28,10 @@ public class Main {
         int prev = cur - 1;
         String result = "";
 
-        if (arr.length <= 1) {
+        if (arr.length == 1) {
             result = result + arr[0];
-        } else if (!arr.length) {
-            return;
+        } else if (arr.length < 1) {
+            System.out.println("Массив пустой!");
         }
 
         while (cur < arr.length) {
