@@ -30,6 +30,8 @@ public class Main {
 
         if (arr.length <= 1) {
             result = result + arr[0];
+        } else if (!arr.length) {
+            return;
         }
 
         while (cur < arr.length) {
