@@ -34,16 +34,17 @@ public class MinStack{
 
     }
 
-    public void peekStack() {
+    public Integer peekStack() {
         System.out.println("Верхнее значение в стеке: " + st.peek());
+        return st.peek();
         }
 
-    public void getMin() {
+    public Integer getMin() {
         if (minStack.isEmpty()) {
             System.out.println("Стек пустой!");
-            return;
         }
         System.out.println("Минимальное значение в стеке: " + minStack.peek());
+        return minStack.peek();
     }
 
 }

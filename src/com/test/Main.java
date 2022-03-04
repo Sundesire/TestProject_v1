@@ -4,20 +4,25 @@ public class Main {
 
     public static void main(String[] args) {
         //Задача №1
-        int[] sortedMass = {2};
-        sorting(sortedMass);
+        /*int[] sortedMass = {2};
+        sorting(sortedMass);*/
 
         //Задача №2
-        /*
+
+        int peek = 0;
+        int min = 0;
         MinStack minStack = new MinStack();
         minStack.pushStack(-2);
         minStack.pushStack(0);
         minStack.pushStack(-3);
         System.out.println("Текущий стек: " + minStack.st);
-        minStack.getMin();
-        minStack.peekStack();
+        min = minStack.getMin();
+        System.out.println("Min: " + min);
+        peek = minStack.peekStack();
+        System.out.println("Peek: " + peek);
         minStack.popStack();
-        minStack.getMin();*/
+        min = minStack.getMin();
+        System.out.println("Min: " + min);
 
 
     }
